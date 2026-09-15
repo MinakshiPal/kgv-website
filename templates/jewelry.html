@@ -1,0 +1,366 @@
+{% extends "base.html" %}
+
+{% block title %}Jewelry Collection | KGV - Kasturchand Gendalal Vagrecha{% endblock %}
+
+{% block content %}
+
+<section class="jewelry-hero">
+    <div class="container jewelry-hero-content">
+        <span class="jewelry-hero-tag">Gold & Silver Jewelry</span>
+
+        <h1>Our Jewelry Collection</h1>
+
+        <p>
+            Discover handcrafted gold and silver jewelry made for weddings,
+            festivals, gifting and everyday elegance.
+        </p>
+
+        <div class="jewelry-hero-buttons">
+            <a href="#gold" class="btn btn-primary">Explore Gold Jewelry</a>
+            <a href="#silver" class="btn btn-light">Explore Silver Jewelry</a>
+        </div>
+    </div>
+</section>
+
+<section class="collection-intro">
+    <div class="container">
+        <div class="collection-intro-box">
+            <span class="section-label">KGV Collection</span>
+            <h2>Crafted with Tradition. Designed for You.</h2>
+            <p>
+                At Kasturchand Gendalal Vagrecha, we manufacture and sell a wide
+                variety of traditional and modern jewelry. Our collection includes
+                Bangles, Bajuband, Kangans, Earrings, Payal, Kada and bridal jewelry sets.
+            </p>
+
+            <div class="collection-highlights">
+                <div>
+                    <span>✦</span>
+                    <p>Gold & Silver Jewelry</p>
+                </div>
+                <div>
+                    <span>✦</span>
+                    <p>Wedding & Bridal Sets</p>
+                </div>
+                <div>
+                    <span>✦</span>
+                    <p>Custom Manufacturing</p>
+                </div>
+                <div>
+                    <span>✦</span>
+                    <p>Bulk Orders Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gold" class="collection-section gold-collection">
+    <div class="container">
+        <div class="collection-heading">
+            <span class="section-label">Gold Collection</span>
+            <h2>Gold Jewelry</h2>
+            <p>
+                Traditional gold ornaments and elegant wedding jewelry crafted with attention to detail.
+            </p>
+        </div>
+
+        <div class="jewelry-product-grid">
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/gold-bangles.png') }}"
+                         alt="Gold Bangles">
+
+                    <span class="product-badge">Gold</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Gold Bangles</h3>
+                    <p>Traditional and designer gold bangles for daily wear, festivals and weddings.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20am%20interested%20in%20Gold%20Bangles."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/gold-kangans.png') }}"
+                         alt="Gold Kangans">
+
+                    <span class="product-badge">Gold</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Gold Kangans</h3>
+                    <p>Beautiful bridal and festive Kangan designs made for special celebrations.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20am%20interested%20in%20Gold%20Kangans."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/gold-earrings.jpg') }}"
+                         alt="Gold Earrings">
+
+                    <span class="product-badge">Gold</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Gold Earrings</h3>
+                    <p>Traditional Jhumkas, elegant studs and festive gold earring designs.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20am%20interested%20in%20Gold%20Earrings."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/bridal-set.png') }}"
+                         alt="Gold Bridal Jewelry Set">
+
+                    <span class="product-badge">Bridal</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Gold Bridal Sets</h3>
+                    <p>Complete wedding and bridal jewelry sets for your most special day.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20want%20details%20about%20Gold%20Bridal%20Sets."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="collection-action">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                Enquire About Gold Jewelry
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="silver" class="collection-section silver-collection">
+    <div class="container">
+        <div class="collection-heading">
+            <span class="section-label">Silver Collection</span>
+            <h2>Silver Jewelry</h2>
+            <p>
+                Beautiful silver jewelry for traditional wear, festive gifting and daily elegance.
+            </p>
+        </div>
+
+        <div class="jewelry-product-grid">
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/silver-bangles.png') }}"
+                         alt="Silver Bangles">
+
+                    <span class="product-badge silver-badge">Silver</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Silver Bangles</h3>
+                    <p>Traditional silver bangles with attractive patterns and careful finishing.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20am%20interested%20in%20Silver%20Bangles."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/silver-payal.png') }}"
+                         alt="Silver Payal">
+
+                    <span class="product-badge silver-badge">Silver</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Silver Payal</h3>
+                    <p>Classic silver Payal and anklets with bells, patterns and traditional designs.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20am%20interested%20in%20Silver%20Payal."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/silver-kada.png') }}"
+                         alt="Silver Kada">
+
+                    <span class="product-badge silver-badge">Silver</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Silver Kada</h3>
+                    <p>Strong, stylish and traditional silver Kada designs for men and women.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20am%20interested%20in%20Silver%20Kada."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+            <article class="jewelry-product-card">
+                <div class="jewelry-image-wrap">
+                    <img src="{{ url_for('static', filename='images/family-set.png') }}"
+                         alt="Silver Jewelry Gift Set">
+
+                    <span class="product-badge silver-badge">Special</span>
+                </div>
+
+                <div class="jewelry-card-content">
+                    <h3>Silver Gift Collection</h3>
+                    <p>Silver jewelry and special designs for family functions, festivals and gifting.</p>
+
+                    <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20want%20details%20about%20your%20Silver%20Gift%20Collection."
+                       target="_blank"
+                       class="product-link">
+                        Enquire on WhatsApp →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="collection-action">
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">
+                Enquire About Silver Jewelry
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="category-showcase">
+    <div class="container">
+        <div class="collection-heading">
+            <span class="section-label">Explore More</span>
+            <h2>Special Jewelry Categories</h2>
+            <p>Choose a category and discuss your design or requirement with us.</p>
+        </div>
+
+        <div class="category-showcase-grid">
+
+            <div class="category-showcase-card">
+                <img src="{{ url_for('static', filename='images/gold-bangles.png') }}"
+                     alt="Bangles and Bajuband">
+
+                <div>
+                    <h3>Bangles & Bajuband</h3>
+                    <p>Traditional and designer arm jewelry in gold and silver.</p>
+                    <a href="#gold">Explore Designs →</a>
+                </div>
+            </div>
+
+            <div class="category-showcase-card">
+                <img src="{{ url_for('static', filename='images/gold-kangans1.png') }}"
+                     alt="Gold Kangans">
+
+                <div>
+                    <h3>Kangans</h3>
+                    <p>Bridal, festive and daily-wear Kangan designs.</p>
+                    <a href="#gold">Explore Designs →</a>
+                </div>
+            </div>
+
+            <div class="category-showcase-card">
+                <img src="{{ url_for('static', filename='images/gold-earrings1.png') }}"
+                     alt="Gold Earrings">
+
+                <div>
+                    <h3>Earrings</h3>
+                    <p>Jhumkas, studs and traditional earrings for every occasion.</p>
+                    <a href="#gold">Explore Designs →</a>
+                </div>
+            </div>
+
+            <div class="category-showcase-card">
+                <img src="{{ url_for('static', filename='images/silver-payal.png') }}"
+                     alt="Silver Payal and Kada">
+
+                <div>
+                    <h3>Payal & Kada</h3>
+                    <p>Classic silver Payal and Kada with attractive designs.</p>
+                    <a href="#silver">Explore Designs →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="custom-jewelry-banner">
+    <div class="container custom-jewelry-banner-grid">
+        <div>
+            <span class="section-label">Custom Manufacturing</span>
+            <h2>Have a Design in Mind?</h2>
+            <p>
+                Share a photo, sketch or idea. We can manufacture gold and silver
+                jewelry according to your preferred design, weight and requirement.
+            </p>
+        </div>
+
+        <div class="custom-banner-buttons">
+            <a href="{{ url_for('custom_jewelry') }}" class="btn btn-primary">
+                Get Custom Jewelry Made
+            </a>
+
+            <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20want%20to%20get%20custom%20jewelry%20made."
+               target="_blank"
+               class="btn btn-whatsapp">
+                WhatsApp Your Design
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-strip">
+    <div class="container">
+        <h3>Looking for wedding jewelry or a bulk order?</h3>
+        <p>
+            Contact KGV for bridal sets, custom designs, retail jewelry and bulk requirements.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="tel:+919522222079" class="btn btn-call">
+                Call Now
+            </a>
+
+            <a href="https://wa.me/919522222079"
+               class="btn btn-whatsapp"
+               target="_blank">
+                WhatsApp Us
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

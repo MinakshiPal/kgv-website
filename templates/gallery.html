@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery – KGV Kasturchand Gendalal Vagrecha{% endblock %}
+
+{% block content %}
+
+<section class="section page-header">
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>
+            Explore our workshop, manufacturing process and finished gold and silver jewelry designs.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Workshop & Manufacturing</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/workshop-1.png') }}"
+                     alt="KGV Jewelry Workshop">
+                <p>Our Jewelry Workshop</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/karigar-at-work.png') }}"
+                     alt="Jewelry Karigar at Work">
+                <p>Karigar Crafting Jewelry</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/tools.png') }}"
+                     alt="Jewelry Manufacturing Tools">
+                <p>Jewelry Tools & Equipment</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Gold Jewelry</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gold-bangles.png') }}"
+                     alt="Gold Bangles">
+                <p>Gold Bangles</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gold-kangans.png') }}"
+                     alt="Gold Kangans">
+                <p>Gold Kangans</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gold-earrings.jpg') }}"
+                     alt="Gold Earrings">
+                <p>Gold Earrings</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Silver Jewelry</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/silver-payal.png') }}"
+                     alt="Silver Payal">
+                <p>Silver Payal</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/silver-kada.png') }}"
+                     alt="Silver Kada">
+                <p>Silver Kada</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/silver-bangles.png') }}"
+                     alt="Silver Bangles">
+                <p>Silver Bangles</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Wedding & Special Sets</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/bridal-set.png') }}"
+                     alt="Gold Bridal Jewelry Set">
+                <p>Bridal Jewelry Set</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/family-set.png') }}"
+                     alt="Family Jewelry Set">
+                <p>Family Jewelry Set</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

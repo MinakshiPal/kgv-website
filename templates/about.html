@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}About Us – KGV Kasturchand Gendalal Vagrecha{% endblock %}
+
+{% block content %}
+
+<section class="section page-header">
+    <div class="container">
+        <h1>About Kasturchand Gendalal Vagrecha</h1>
+        <p>Gold & Silver Jewelry Manufacturers & Retailers in Khachrod, Ujjain</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Our Story</h2>
+        <p>
+            Kasturchand Gendalal Vagrecha (KGV) has been a trusted name in Khachrod, Ujjain for many years. 
+            We specialize in manufacturing and retailing gold and silver jewelry, including Bangles, Bajuband, 
+            Kangans, Earrings, Silver Payal, Kada and other traditional ornaments.
+        </p>
+        <p>
+            Our journey began with a vision to provide high-quality, beautifully crafted jewelry 
+            at fair prices. Over the years, we have built strong relationships with our customers 
+            through honesty, craftsmanship and reliable service.
+        </p>
+
+        <h2>Our Work: Manufacturing & Retail</h2>
+        <p>
+            At our workshop, skilled artisans craft jewelry by hand, combining traditional techniques 
+            with modern finishing. We handle:
+        </p>
+        <ul>
+            <li>Designing and manufacturing of gold jewelry</li>
+            <li>Designing and manufacturing of silver jewelry</li>
+            <li>Retail sale of finished ornaments</li>
+            <li>Custom orders for weddings, festivals and bulk requirements</li>
+        </ul>
+
+        <h2>Our Product Range</h2>
+        <ul>
+            <li><strong>Gold Jewelry:</strong> Traditional ornaments, wedding sets, custom designs</li>
+            <li><strong>Silver Jewelry:</strong> Bangles, Payal, Kada, Earrings and more</li>
+            <li><strong>Special Items:</strong> Bangles, Bajuband, Kangans, Earrings, Payal, Kada, etc.</li>
+        </ul>
+
+        <h2>Our Values</h2>
+        <ul class="values-list">
+            <li><strong>Quality:</strong> We use quality materials and ensure fine finishing.</li>
+            <li><strong>Purity:</strong> Honest disclosure of gold/silver purity.</li>
+            <li><strong>Trust:</strong> Transparent pricing and long-term relationships.</li>
+            <li><strong>Craftsmanship:</strong> Skilled karigars with years of experience.</li>
+        </ul>
+
+        <div class="section-cta">
+            <a href="{{ url_for('jewelry') }}" class="btn btn-primary">Explore Our Jewelry</a>
+            <a href="{{ url_for('custom_jewelry') }}" class="btn btn-secondary">Get Custom Jewelry Made</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Products – KGV Kasturchand Gendalal Vagrecha{% endblock %}
+
+{% block content %}
+
+<section class="section page-header">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>
+            We offer a carefully curated range of premium dry fruits, nuts, jewelry, silverware, and decorative clocks.
+        </p>
+    </div>
+</section>
+
+<!-- Dry Fruits & Mixed Nuts -->
+<section id="dry-fruits" class="section product-section">
+    <div class="container">
+        <h2>Dry Fruits & Mixed Nuts</h2>
+        <p>
+            Our dry fruits and nuts are sourced for quality and freshness, perfect for daily consumption, 
+            gifting, and festive occasions.
+        </p>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Almonds (Badam)</h3>
+                <p>Premium quality almonds, rich in nutrients and taste.</p>
+            </div>
+            <div class="product-card">
+                <h3>Cashews (Kaju)</h3>
+                <p>Top-grade cashews, ideal for snacks and sweets.</p>
+            </div>
+            <div class="product-card">
+                <h3>Raisins (Kishmish)</h3>
+                <p>Sweet and juicy raisins for health and desserts.</p>
+            </div>
+            <div class="product-card">
+                <h3>Pistachios (Pista)</h3>
+                <p>Delicious pistachios, perfect for gifting and festivals.</p>
+            </div>
+            <div class="product-card">
+                <h3>Mixed Nut Packs</h3>
+                <p>Custom gift packs with a mix of premium dry fruits and nuts.</p>
+            </div>
+        </div>
+        <div class="product-cta">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Enquire About Dry Fruits</a>
+        </div>
+    </div>
+</section>
+
+<!-- Jewelry & Silverware -->
+<section id="jewelry" class="section product-section">
+    <div class="container">
+        <h2>Jewelry & Silverware</h2>
+        <p>
+            We offer a beautiful collection of traditional jewelry and silverware, 
+            perfect for weddings, festivals, and special gifts.
+        </p>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Traditional Jewelry</h3>
+                <p>Necklaces, bangles, earrings and more in classic designs.</p>
+            </div>
+            <div class="product-card">
+                <h3>Silver Utensils</h3>
+                <p>Silver plates, bowls, glasses and other household items.</p>
+            </div>
+            <div class="product-card">
+                <h3>Gift Items</h3>
+                <p>Silver coins, small idols, and decorative gift pieces.</p>
+            </div>
+        </div>
+        <div class="product-cta">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Enquire About Jewelry & Silverware</a>
+        </div>
+    </div>
+</section>
+
+<!-- Clocks & Gift Items -->
+<section id="clocks" class="section product-section">
+    <div class="container">
+        <h2>Clocks & Gift Items</h2>
+        <p>
+            Our collection of clocks and decorative items adds elegance to your home and makes thoughtful gifts.
+        </p>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Wall Clocks</h3>
+                <p>Modern and traditional designs for living rooms and offices.</p>
+            </div>
+            <div class="product-card">
+                <h3>Table Clocks</h3>
+                <p>Compact and stylish clocks for desks and shelves.</p>
+            </div>
+            <div class="product-card">
+                <h3>Decorative & Gift Items</h3>
+                <p>Unique pieces for home decor and special occasions.</p>
+            </div>
+        </div>
+        <div class="product-cta">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Enquire About Clocks & Gifts</a>
+        </div>
+    </div>
+</section>
+
+<!-- Bulk / Custom CTA -->
+<section class="section cta-strip">
+    <div class="container">
+        <h3>Interested in bulk orders or custom gift packs?</h3>
+        <p>Contact us today for special pricing and personalized options.</p>
+        <div class="cta-buttons">
+            <a href="tel:+91 95222 22079" class="btn btn-call">Call Now</a>
+            <a href="https://wa.me/91 95222 22079" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,341 @@
+{% extends "base.html" %}
+
+{% block title %}KGV – Gold & Silver Jewelry Manufacturers{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container hero-content">
+        <span class="hero-tag">Gold & Silver Jewelry Manufacturers</span>
+
+        <h1>Kasturchand Gendalal Vagrecha</h1>
+
+        <p class="hero-sub">
+            Traditional Gold & Silver Jewelry Manufacturing and Retail.
+            Discover Bangles, Kangans, Bajuband, Earrings, Payal, Kada and Custom Jewelry Designs.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{{ url_for('jewelry') }}" class="btn btn-primary">
+                Explore Our Collection
+            </a>
+
+            <a href="{{ url_for('custom_jewelry') }}" class="btn btn-secondary">
+                Get Custom Jewelry Made
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="trust-strip">
+    <div class="container trust-grid">
+        <div class="trust-card">
+            <span class="trust-icon">✦</span>
+            <div>
+                <h3>Gold & Silver</h3>
+                <p>Traditional jewelry collection</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <span class="trust-icon">✦</span>
+            <div>
+                <h3>Custom Manufacturing</h3>
+                <p>Jewelry made as per your design</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <span class="trust-icon">✦</span>
+            <div>
+                <h3>Wedding Orders</h3>
+                <p>Bridal sets and bulk orders</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <span class="trust-icon">✦</span>
+            <div>
+                <h3>Trusted Service</h3>
+                <p>Quality, craftsmanship and care</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-preview">
+    <div class="container about-preview-grid">
+        <div class="about-preview-image">
+            <img src="{{ url_for('static', filename='images/workshop-1.png') }}"
+                 alt="KGV Jewelry Workshop">
+        </div>
+
+        <div class="about-preview-content">
+            <span class="section-label">About KGV</span>
+            <h2>Jewelry Crafted with Tradition and Trust</h2>
+
+            <p>
+                Kasturchand Gendalal Vagrecha is engaged in the manufacturing and sale
+                of gold and silver jewelry. We create beautiful jewelry for daily wear,
+                festivals, weddings and special occasions.
+            </p>
+
+            <p>
+                Our specialties include Bangles, Bajuband, Kangans, Earrings,
+                Silver Payal, Silver Kada and custom-made jewelry designs.
+            </p>
+
+            <a href="{{ url_for('about') }}" class="btn btn-outline">
+                Know More About Us
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section featured-section">
+    <div class="container">
+        <div class="section-heading">
+            <span class="section-label">Featured Collection</span>
+            <h2>Gold Jewelry Collection</h2>
+            <p>Elegant gold designs for weddings, festivals and everyday wear.</p>
+        </div>
+
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="{{ url_for('static', filename='images/gold-bangles.png') }}"
+                     alt="Gold Bangles">
+
+                <div class="featured-card-content">
+                    <h3>Gold Bangles</h3>
+                    <p>Classic and designer bangles for every occasion.</p>
+                    <a href="{{ url_for('jewelry') }}#gold">View Collection →</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <img src="{{ url_for('static', filename='images/gold-kangans.png') }}"
+                     alt="Gold Kangans">
+
+                <div class="featured-card-content">
+                    <h3>Gold Kangans</h3>
+                    <p>Traditional bridal and festive Kangan designs.</p>
+                    <a href="{{ url_for('jewelry') }}#kangans">View Collection →</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <img src="{{ url_for('static', filename='images/gold-earrings.jpg') }}"
+                     alt="Gold Earrings">
+
+                <div class="featured-card-content">
+                    <h3>Gold Earrings</h3>
+                    <p>Jhumkas, studs and traditional earring designs.</p>
+                    <a href="{{ url_for('jewelry') }}#earrings">View Collection →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-button">
+            <a href="{{ url_for('jewelry') }}" class="btn btn-primary">
+                View Complete Gold Collection
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section manufacturing-section">
+    <div class="container manufacturing-grid">
+        <div class="manufacturing-content">
+            <span class="section-label">Custom Jewelry</span>
+            <h2>Your Design, Our Craftsmanship</h2>
+
+            <p>
+                Share your jewelry design, reference photo, sketch or requirement with us.
+                Our skilled artisans can manufacture gold and silver jewelry according to
+                your preferred design, weight and occasion.
+            </p>
+
+            <div class="process-cards">
+                <div class="process-card">
+                    <span>01</span>
+                    <p>Share your design idea</p>
+                </div>
+
+                <div class="process-card">
+                    <span>02</span>
+                    <p>Discuss weight and details</p>
+                </div>
+
+                <div class="process-card">
+                    <span>03</span>
+                    <p>Jewelry manufacturing</p>
+                </div>
+
+                <div class="process-card">
+                    <span>04</span>
+                    <p>Ready for collection</p>
+                </div>
+            </div>
+
+            <div class="section-cta left-cta">
+                <a href="{{ url_for('custom_jewelry') }}" class="btn btn-primary">
+                    Discuss Your Design
+                </a>
+
+                <a href="https://wa.me/919522222079"
+                   class="btn btn-whatsapp"
+                   target="_blank">
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+
+        <div class="manufacturing-image">
+            <img src="{{ url_for('static', filename='images/karigar-at-work.png') }}"
+                 alt="Karigar Making Jewelry">
+        </div>
+    </div>
+</section>
+
+<section class="section featured-section silver-section">
+    <div class="container">
+        <div class="section-heading">
+            <span class="section-label">Silver Collection</span>
+            <h2>Silver Jewelry Collection</h2>
+            <p>Traditional silver jewelry crafted for comfort, style and special occasions.</p>
+        </div>
+
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="{{ url_for('static', filename='images/silver-payal.png') }}"
+                     alt="Silver Payal">
+
+                <div class="featured-card-content">
+                    <h3>Silver Payal</h3>
+                    <p>Traditional anklets with stylish and intricate designs.</p>
+                    <a href="{{ url_for('jewelry') }}#payal-kada">View Collection →</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <img src="{{ url_for('static', filename='images/silver-kada.png') }}"
+                     alt="Silver Kada">
+
+                <div class="featured-card-content">
+                    <h3>Silver Kada</h3>
+                    <p>Strong and stylish Kada designs for men and women.</p>
+                    <a href="{{ url_for('jewelry') }}#payal-kada">View Collection →</a>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <img src="{{ url_for('static', filename='images/silver-bangles.png') }}"
+                     alt="Silver Bangles">
+
+                <div class="featured-card-content">
+                    <h3>Silver Bangles</h3>
+                    <p>Beautiful bangles in traditional and modern designs.</p>
+                    <a href="{{ url_for('jewelry') }}#silver">View Collection →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-button">
+            <a href="{{ url_for('jewelry') }}" class="btn btn-secondary">
+                Explore Silver Jewelry
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section bridal-section">
+    <div class="container bridal-grid">
+        <div class="bridal-image">
+            <img src="{{ url_for('static', filename='images/bridal-set.png') }}"
+                 alt="Bridal Jewelry Set">
+        </div>
+
+        <div class="bridal-content">
+            <span class="section-label">Wedding Collection</span>
+            <h2>Jewelry for Your Special Day</h2>
+
+            <p>
+                Make your wedding celebrations memorable with custom bridal jewelry,
+                traditional Bangles, Kangans, Earrings and special wedding sets.
+            </p>
+
+            <p>
+                We also accept custom requirements and bulk orders for weddings,
+                family functions, festivals and special occasions.
+            </p>
+
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                Enquire for Wedding Jewelry
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section why-home-section">
+    <div class="container">
+        <div class="section-heading">
+            <span class="section-label">Why Choose KGV</span>
+            <h2>Quality, Craftsmanship and Personal Service</h2>
+        </div>
+
+        <div class="why-home-grid">
+            <div class="why-home-card">
+                <span>✦</span>
+                <h3>Manufacturing Experience</h3>
+                <p>Jewelry made through skilled craftsmanship and careful finishing.</p>
+            </div>
+
+            <div class="why-home-card">
+                <span>✦</span>
+                <h3>Custom Designs</h3>
+                <p>Get jewelry made according to your preferred design and requirement.</p>
+            </div>
+
+            <div class="why-home-card">
+                <span>✦</span>
+                <h3>Gold & Silver Range</h3>
+                <p>Choose from Bangles, Kangans, Earrings, Payal, Kada and more.</p>
+            </div>
+
+            <div class="why-home-card">
+                <span>✦</span>
+                <h3>Retail & Bulk Orders</h3>
+                <p>Available for individual customers, weddings and bulk requirements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="final-cta">
+    <div class="container">
+        <span class="section-label">Contact KGV Today</span>
+        <h2>Looking for a Custom Jewelry Design?</h2>
+        <p>
+            Call or WhatsApp us to discuss gold jewelry, silver jewelry,
+            bridal sets, custom manufacturing or bulk orders.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="tel:+919522222079" class="btn btn-call">
+                Call Now
+            </a>
+
+            <a href="https://wa.me/919522222079"
+               class="btn btn-whatsapp"
+               target="_blank">
+                Chat on WhatsApp
+            </a>
+
+            <a href="{{ url_for('contact') }}" class="btn btn-outline light-outline">
+                Send Enquiry
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

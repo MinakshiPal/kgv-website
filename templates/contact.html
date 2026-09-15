@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Contact – KGV Kasturchand Gendalal Vagrecha{% endblock %}
+
+{% block content %}
+
+<section class="section page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+            For jewelry enquiries, custom designs and bulk orders, get in touch with us.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container contact-layout">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+                <strong>Kasturchand Gendalal Vagrecha (KGV)</strong><br>
+                03 Molana Azad Marg, Bhora Bazar,<br>
+                Khachrod, Ujjain, Madhya Pradesh
+            </p>
+            <p>
+                Phone: +91 +91 95222 22079<br>
+                WhatsApp: +91 +91 95222 22079
+            </p>
+
+            <h3>Business Hours</h3>
+            <p>
+                Monday – Saturday: 9:00 AM – 9:00 PM<br>
+                Sunday: Closed (or as per your timing)
+            </p>
+
+            <div class="quick-contact">
+                <a href="tel:+91 95222 22079" class="btn btn-call">Call Now</a>
+                <a href="https://wa.me/91 95222 22079" class="btn btn-whatsapp" target="_blank">Chat on WhatsApp</a>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Khachrod,Ujjain&output=embed"
+                    width="100%"
+                    height="250"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <h2>Send Us a Message</h2>
+            <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number *</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">I am interested in</label>
+                    <select id="interest" name="interest">
+                        <option value="Gold Jewelry">Gold Jewelry</option>
+                        <option value="Silver Jewelry">Silver Jewelry</option>
+                        <option value="Custom Manufacturing">Custom Jewelry Manufacturing</option>
+                        <option value="Bulk Order">Bulk Order</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message / Enquiry</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirement, design idea, occasion, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

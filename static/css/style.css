@@ -1,0 +1,1332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #faf8f5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #b8860b;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #555;
+    color: #fff;
+}
+
+.btn-outline {
+    border: 2px solid #b8860b;
+    color: #b8860b;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+.btn-call {
+    background: #1b5e20;
+    color: #fff;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 2px solid #b8860b;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #b8860b;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.main-nav a:hover {
+    color: #b8860b;
+}
+
+.header-cta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.site-main {
+    min-height: 60vh;
+    padding: 20px 0;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.page-header {
+    text-align: center;
+    background: #fff8e1;
+    padding: 30px 0;
+    border-bottom: 1px solid #b8860b;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+    color: #b8860b;
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(255,248,225,0.9) 0%, rgba(255,224,178,0.9) 100%),
+                url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 1px solid #b8860b;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #b8860b;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-snapshot,
+.jewelry-categories,
+.manufacturing-highlight,
+.why-choose {
+    text-align: center;
+}
+
+.about-snapshot h2,
+.jewelry-categories h2,
+.manufacturing-highlight h2,
+.why-choose h2 {
+    margin-bottom: 20px;
+    color: #b8860b;
+}
+
+.about-snapshot p,
+.manufacturing-highlight p,
+.why-choose p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+    border-top: 3px solid #b8860b;
+}
+
+.category-card h3 {
+    margin-bottom: 10px;
+    color: #b8860b;
+}
+
+.features-list,
+.values-list,
+.process-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.features-list li,
+.values-list li {
+    margin-bottom: 10px;
+    list-style: disc;
+}
+
+.process-list li {
+    margin-bottom: 10px;
+    list-style: decimal;
+}
+
+.section-cta {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-strip {
+    background: #fff8e1;
+    text-align: center;
+    border-top: 1px solid #b8860b;
+    border-bottom: 1px solid #b8860b;
+}
+
+.cta-strip h3 {
+    margin-bottom: 10px;
+    color: #b8860b;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.product-section h2 {
+    margin-bottom: 15px;
+    color: #b8860b;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-left: 3px solid #b8860b;
+}
+
+.product-card h3 {
+    margin-bottom: 8px;
+    color: #b8860b;
+}
+
+.product-cta {
+    margin-top: 20px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+    margin-bottom: 15px;
+    color: #b8860b;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.quick-contact {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.flash {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.flash-success {
+    background: #e8f5e9;
+    border: 1px solid #2e7d32;
+    color: #1b5e20;
+}
+
+.flash-error {
+    background: #ffebee;
+    border: 1px solid #c62828;
+    color: #b71c1c;
+}
+
+.site-footer {
+    background: #3e2723;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 3px solid #b8860b;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.footer-inner h3,
+.footer-inner h4 {
+    margin-bottom: 10px;
+    color: #ffd54f;
+}
+
+.footer-links ul li {
+    margin-bottom: 6px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ffd54f;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    .header-cta {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(42, 25, 12, 0.82), rgba(42, 25, 12, 0.46)),
+        url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 780px;
+    text-align: left;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+.hero-sub {
+    max-width: 680px;
+    font-size: 1.15rem;
+    margin: 0 0 25px;
+    color: #fff8e1;
+}
+
+.hero-tag,
+.section-label {
+    display: inline-block;
+    color: #b8860b;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.hero-tag {
+    color: #ffd54f;
+    border: 1px solid rgba(255, 213, 79, 0.7);
+    padding: 7px 12px;
+    border-radius: 20px;
+}
+
+.trust-strip {
+    background: #3e2723;
+    color: #ffffff;
+    padding: 22px 0;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.trust-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+    padding-right: 12px;
+}
+
+.trust-card:last-child {
+    border-right: none;
+}
+
+.trust-icon {
+    font-size: 1.5rem;
+    color: #ffd54f;
+}
+
+.trust-card h3 {
+    font-size: 0.96rem;
+    color: #ffd54f;
+}
+
+.trust-card p {
+    font-size: 0.78rem;
+    color: #f5eee5;
+}
+
+.about-preview {
+    background: #ffffff;
+}
+
+.about-preview-grid,
+.manufacturing-grid,
+.bridal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-preview-image img,
+.manufacturing-image img,
+.bridal-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(62, 39, 35, 0.16);
+}
+
+.about-preview-content h2,
+.manufacturing-content h2,
+.bridal-content h2 {
+    color: #3e2723;
+    font-size: 2rem;
+    margin: 10px 0 15px;
+}
+
+.about-preview-content p,
+.manufacturing-content p,
+.bridal-content p {
+    margin-bottom: 15px;
+}
+
+.featured-section {
+    background: #fff8e1;
+}
+
+.silver-section {
+    background: #f4f5f6;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #3e2723;
+    font-size: 2rem;
+    margin: 8px 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.featured-card {
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(62, 39, 35, 0.2);
+}
+
+.featured-card img {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-card-content {
+    padding: 18px;
+}
+
+.featured-card-content h3 {
+    color: #b8860b;
+    margin-bottom: 7px;
+}
+
+.featured-card-content p {
+    margin-bottom: 12px;
+}
+
+.featured-card-content a {
+    font-weight: 700;
+    color: #3e2723;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.manufacturing-section {
+    background: #3e2723;
+    color: #ffffff;
+}
+
+.manufacturing-content h2 {
+    color: #ffd54f;
+}
+
+.manufacturing-content p {
+    color: #f6eee5;
+}
+
+.manufacturing-section .section-label {
+    color: #ffd54f;
+}
+
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.process-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 213, 79, 0.28);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.process-card span {
+    color: #ffd54f;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.process-card p {
+    margin: 0;
+    font-size: 0.88rem;
+}
+
+.left-cta {
+    justify-content: flex-start;
+}
+
+.bridal-section {
+    background: #ffffff;
+}
+
+.why-home-section {
+    background: #fff8e1;
+}
+
+.why-home-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.why-home-card {
+    background: #ffffff;
+    padding: 24px 18px;
+    border-radius: 10px;
+    border-top: 4px solid #b8860b;
+    box-shadow: 0 5px 16px rgba(62, 39, 35, 0.1);
+    text-align: center;
+}
+
+.why-home-card span {
+    display: block;
+    color: #b8860b;
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+}
+
+.why-home-card h3 {
+    color: #3e2723;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.why-home-card p {
+    font-size: 0.88rem;
+}
+
+.final-cta {
+    background:
+        linear-gradient(rgba(62, 39, 35, 0.9), rgba(62, 39, 35, 0.9)),
+        url("../images/family-set.png");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 75px 0;
+    text-align: center;
+}
+
+.final-cta .section-label {
+    color: #ffd54f;
+}
+
+.final-cta h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 8px 0 10px;
+}
+
+.final-cta p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #f6eee5;
+}
+
+.final-cta .cta-buttons {
+    margin-top: 24px;
+}
+
+.light-outline {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.light-outline:hover {
+    background: #ffffff;
+    color: #3e2723;
+}
+
+@media (max-width: 900px) {
+    .trust-grid,
+    .why-home-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 440px;
+        background-position: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-preview-grid,
+    .manufacturing-grid,
+    .bridal-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .manufacturing-image {
+        order: -1;
+    }
+
+    .about-preview-image img,
+    .manufacturing-image img,
+    .bridal-image img {
+        height: 290px;
+    }
+
+    .left-cta {
+        justify-content: center;
+    }
+
+    .featured-grid,
+    .why-home-grid,
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-card {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 0 0 12px;
+    }
+
+    .trust-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .process-cards {
+        grid-template-columns: 1fr;
+    }
+}
+/* Floating WhatsApp and Call Buttons */
+.floating-contact-buttons {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.floating-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 27px;
+    text-decoration: none;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 2px solid #ffffff;
+}
+
+.floating-btn:hover {
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 9px 24px rgba(0, 0, 0, 0.35);
+}
+
+.floating-whatsapp {
+    background: #25d366;
+}
+
+.floating-call {
+    background: #b8860b;
+}
+
+.floating-btn span {
+    line-height: 1;
+}
+
+/* Small pulse animation for WhatsApp */
+.floating-whatsapp {
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.65);
+    }
+
+    70% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 768px) {
+    .floating-contact-buttons {
+        right: 15px;
+        bottom: 15px;
+        gap: 10px;
+    }
+
+    .floating-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 23px;
+    }
+}
+.floating-contact-buttons {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.floating-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 29px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-btn:hover {
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 9px 24px rgba(0, 0, 0, 0.35);
+}
+
+.floating-btn i {
+    line-height: 1;
+}
+
+.floating-whatsapp {
+    background: #25d366;
+    animation: whatsappPulse 2s infinite;
+}
+
+.floating-call {
+    background: #b8860b;
+}
+
+@keyframes whatsappPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.65);
+    }
+
+    70% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-contact-buttons {
+        right: 15px;
+        bottom: 15px;
+        gap: 10px;
+    }
+
+    .floating-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 25px;
+    }
+}
+/* =========================================
+   JEWELRY COLLECTION PAGE
+========================================= */
+
+.jewelry-hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background:
+        linear-gradient(90deg, rgba(55, 30, 12, 0.88), rgba(55, 30, 12, 0.52)),
+        url("../images/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.jewelry-hero-content {
+    max-width: 760px;
+    text-align: center;
+}
+
+.jewelry-hero-tag {
+    display: inline-block;
+    border: 1px solid #ffd54f;
+    border-radius: 25px;
+    color: #ffd54f;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 7px 14px;
+    text-transform: uppercase;
+}
+
+.jewelry-hero h1 {
+    color: #ffffff;
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.jewelry-hero p {
+    color: #fff8e1;
+    font-size: 1.12rem;
+    margin: 0 auto 25px;
+    max-width: 650px;
+}
+
+.jewelry-hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #3e2723;
+}
+
+.btn-light:hover {
+    background: #ffd54f;
+    color: #3e2723;
+}
+
+.collection-intro {
+    background: #ffffff;
+    padding: 55px 0;
+}
+
+.collection-intro-box {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.collection-intro-box h2 {
+    color: #3e2723;
+    font-size: 2rem;
+    margin: 9px 0 14px;
+}
+
+.collection-intro-box > p {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.collection-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.collection-highlights div {
+    background: #fff8e1;
+    border-radius: 10px;
+    padding: 18px 12px;
+}
+
+.collection-highlights span {
+    color: #b8860b;
+    display: block;
+    font-size: 1.45rem;
+    margin-bottom: 5px;
+}
+
+.collection-highlights p {
+    color: #3e2723;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.collection-section {
+    padding: 70px 0;
+}
+
+.gold-collection {
+    background: #fff8e1;
+}
+
+.silver-collection {
+    background: #eef1f3;
+}
+
+.collection-heading {
+    margin: 0 auto 32px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.collection-heading h2 {
+    color: #3e2723;
+    font-size: 2.15rem;
+    margin: 8px 0;
+}
+
+.collection-heading p {
+    margin: 0 auto;
+}
+
+.jewelry-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.jewelry-product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.12);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.jewelry-product-card:hover {
+    box-shadow: 0 16px 30px rgba(62, 39, 35, 0.2);
+    transform: translateY(-8px);
+}
+
+.jewelry-image-wrap {
+    height: 245px;
+    overflow: hidden;
+    position: relative;
+}
+
+.jewelry-image-wrap img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+    width: 100%;
+}
+
+.jewelry-product-card:hover .jewelry-image-wrap img {
+    transform: scale(1.08);
+}
+
+.product-badge {
+    background: #b8860b;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    left: 12px;
+    letter-spacing: 0.8px;
+    padding: 5px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 12px;
+}
+
+.silver-badge {
+    background: #5f6b72;
+}
+
+.jewelry-card-content {
+    padding: 18px;
+}
+
+.jewelry-card-content h3 {
+    color: #3e2723;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.jewelry-card-content p {
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+    min-height: 66px;
+}
+
+.product-link {
+    color: #b8860b;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.product-link:hover {
+    color: #3e2723;
+}
+
+.collection-action {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.category-showcase {
+    background: #ffffff;
+    padding: 70px 0;
+}
+
+.category-showcase-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category-showcase-card {
+    background: #fff8e1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.25s ease;
+}
+
+.category-showcase-card:hover {
+    transform: translateY(-6px);
+}
+
+.category-showcase-card img {
+    display: block;
+    height: 170px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.category-showcase-card div {
+    padding: 16px;
+}
+
+.category-showcase-card h3 {
+    color: #3e2723;
+    font-size: 1.05rem;
+    margin-bottom: 7px;
+}
+
+.category-showcase-card p {
+    font-size: 0.86rem;
+    margin-bottom: 12px;
+}
+
+.category-showcase-card a {
+    color: #b8860b;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.custom-jewelry-banner {
+    background: #3e2723;
+    color: #ffffff;
+    padding: 55px 0;
+}
+
+.custom-jewelry-banner-grid {
+    align-items: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+.custom-jewelry-banner .section-label {
+    color: #ffd54f;
+}
+
+.custom-jewelry-banner h2 {
+    color: #ffd54f;
+    font-size: 2rem;
+    margin: 8px 0 10px;
+}
+
+.custom-jewelry-banner p {
+    color: #f8eee2;
+    max-width: 640px;
+}
+
+.custom-banner-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+/* Tablet view */
+@media (max-width: 1000px) {
+    .jewelry-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-highlights,
+    .category-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .jewelry-hero {
+        min-height: 400px;
+    }
+
+    .collection-intro,
+    .collection-section,
+    .category-showcase {
+        padding: 48px 0;
+    }
+
+    .jewelry-product-grid,
+    .collection-highlights,
+    .category-showcase-grid,
+    .custom-jewelry-banner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jewelry-image-wrap {
+        height: 260px;
+    }
+
+    .jewelry-card-content p {
+        min-height: auto;
+    }
+
+    .custom-banner-buttons {
+        justify-content: flex-start;
+    }
+}

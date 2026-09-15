@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Custom Jewelry Manufacturing – KGV{% endblock %}
+
+{% block content %}
+
+<section class="section page-header">
+    <div class="container">
+        <h1>Custom Jewelry Manufacturing</h1>
+        <p>Get your own design crafted in gold or silver at Kasturchand Gendalal Vagrecha</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>We Create Jewelry As Per Your Design</h2>
+        <p>
+            At Kasturchand Gendalal Vagrecha, we don't just sell ready-made jewelry — 
+            we manufacture it. Share your idea, sketch, photo or requirement, and our 
+            skilled artisans will craft it into beautiful gold or silver jewelry.
+        </p>
+
+        <h2>What We Can Make for You</h2>
+        <ul>
+            <li>Custom Bangles, Bajuband, Kangans</li>
+            <li>Custom Earrings (Jhumkas, studs, traditional designs)</li>
+            <li>Silver Payal and Kada with your preferred patterns</li>
+            <li>Complete wedding jewelry sets (bridal sets, family sets)</li>
+            <li>Bulk orders for retailers, events and festivals</li>
+        </ul>
+
+        <h2>How It Works</h2>
+        <ol class="process-list">
+            <li><strong>Share Your Idea:</strong> Tell us your design, occasion and budget.</li>
+            <li><strong>Discussion:</strong> We discuss design, weight, purity and approximate cost.</li>
+            <li><strong>Manufacturing:</strong> Our karigars start crafting your jewelry.</li>
+            <li><strong>Delivery:</strong> Once ready, you can collect it from our shop or arrange delivery.</li>
+        </ol>
+
+        <h2>Why Choose Us for Custom Jewelry</h2>
+        <ul class="features-list">
+            <li>In-house manufacturing unit with experienced artisans</li>
+            <li>Flexibility in design, weight and purity</li>
+            <li>Competitive making charges</li>
+            <li>Transparent process and pricing</li>
+        </ul>
+
+        <div class="section-cta">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Send Your Enquiry</a>
+            <a href="https://wa.me/91+91 95222 22079" class="btn btn-whatsapp" target="_blank">Discuss on WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
