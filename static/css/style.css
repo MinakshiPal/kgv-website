@@ -84,7 +84,7 @@ ul, ol {
 }
 
 .logo a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #b8860b;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ ul, ol {
 
 .main-nav ul {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
