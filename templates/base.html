@@ -2,87 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}KGV – Kasturchand Gendalal Vagrecha{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kasturchand Gendalal Vagrecha – Gold & Silver Jewelry Manufacturers & Retailers in Khachrod, Ujjain. Bangles, Bajuband, Kangans, Earrings, Payal, Kada and more.">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>
+        {% block title %}KGV – Kasturchand Gendalal Vagrecha{% endblock %}
+    </title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Kasturchand Gendalal Vagrecha – Gold & Silver Jewelry Manufacturers & Retailers in Khachrod, Ujjain. Bangles, Bajuband, Kangans, Earrings, Payal, Kada and more."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
 
     <!-- Font Awesome: WhatsApp and Phone Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
 
             <div class="logo">
-                <a href="{{ url_for('home') }}">
-                    <img src="{{ url_for('static', filename='images/logo.png') }}"
-                         alt="KGV - Kasturchand Gendalal Vagrecha Logo"
-                         width="120"
-                         height="80">
+                <a
+                    href="{{ url_for('home') }}"
+                    aria-label="KGV Jewellers home"
+                >
+                    <img
+                        src="{{ url_for('static', filename='images/logo.png') }}"
+                        alt="KGV - Kasturchand Gendalal Vagrecha Logo"
+                        width="120"
+                        height="120"
+                    >
                 </a>
             </div>
 
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About Us</a></li>
-                    <li><a href="{{ url_for('jewelry') }}">Jewelry</a></li>
-                    <li><a href="{{ url_for('custom_jewelry') }}">Custom Jewelry</a></li>
-                    <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li>
+                        <a href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('about') }}">About Us</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('jewelry') }}">Jewelry</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('custom_jewelry') }}">
+                            Custom Jewelry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('gallery') }}">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('contact') }}">Contact</a>
+                    </li>
                 </ul>
             </nav>
 
         </div>
     </header>
 
+    <!-- Flash Messages -->
     {% with messages = get_flashed_messages(with_categories=True) %}
         {% if messages %}
             <div class="container">
                 {% for category, message in messages %}
-                    <div class="flash flash-{{ category }}">{{ message }}</div>
+                    <div class="flash flash-{{ category }}" role="status">
+                        {{ message }}
+                    </div>
                 {% endfor %}
             </div>
         {% endif %}
     {% endwith %}
 
+    <!-- Page Content -->
     <main class="site-main">
         {% block content %}{% endblock %}
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
 
             <div class="footer-about">
                 <h3>Kasturchand Gendalal Vagrecha</h3>
-                <p>Gold & Silver Jewelry Manufacturers & Retailers in Khachrod, Ujjain.</p>
-                <p>Specialists in Bangles, Bajuband, Kangans, Earrings, Payal, Kada and more.</p>
+
+                <p>
+                    Gold & Silver Jewelry Manufacturers & Retailers
+                    in Khachrod, Ujjain.
+                </p>
+
+                <p>
+                    Specialists in Bangles, Bajuband, Kangans,
+                    Earrings, Payal, Kada and more.
+                </p>
             </div>
 
             <div class="footer-contact">
                 <h4>Contact</h4>
+
                 <p>
                     03 Molana Azad Marg, Bhora Bazar,<br>
                     Khachrod, Ujjain, Madhya Pradesh
                 </p>
+
                 <p>
-                    Phone: +91 9522222079<br>
-                    WhatsApp: +91 9522222079
+                    Phone:
+                    <a href="tel:+919522222079">
+                        +91 95222 22079
+                    </a>
+                </p>
+
+                <p>
+                    Alternate Phone:
+                    <a href="tel:+917000566368">
+                        +91 70005 66368
+                    </a>
+                </p>
+
+                <p>
+                    WhatsApp:
+                    <a
+                        href="https://wa.me/919522222079"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        +91 95222 22079
+                    </a>
                 </p>
             </div>
 
             <div class="footer-links">
                 <h4>Quick Links</h4>
+
                 <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About Us</a></li>
-                    <li><a href="{{ url_for('jewelry') }}">Jewelry Collection</a></li>
-                    <li><a href="{{ url_for('custom_jewelry') }}">Custom Manufacturing</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li>
+                        <a href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('about') }}">About Us</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('jewelry') }}">
+                            Jewelry Collection
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('custom_jewelry') }}">
+                            Custom Manufacturing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('contact') }}">Contact</a>
+                    </li>
                 </ul>
             </div>
 
@@ -90,32 +177,42 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2025 Kasturchand Gendalal Vagrecha (KGV). All rights reserved.</p>
+                <p>
+                    &copy; 2026 Kasturchand Gendalal Vagrecha (KGV).
+                    All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp and Call Buttons: Bottom Right -->
+    <!-- Floating WhatsApp and Call Buttons -->
     <div class="floating-contact-buttons">
 
-        <a href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20want%20to%20know%20about%20your%20jewelry."
-           class="floating-btn floating-whatsapp"
-           target="_blank"
-           rel="noopener noreferrer"
-           title="Chat on WhatsApp"
-           aria-label="Chat on WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
+        <a
+            href="https://wa.me/919522222079?text=Hello%20KGV%2C%20I%20want%20to%20know%20about%20your%20jewelry."
+            class="floating-btn floating-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Chat on WhatsApp"
+            aria-label="Chat with KGV on WhatsApp at +91 95222 22079"
+        >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
         </a>
 
-        <a href="tel:+919522222079"
-           class="floating-btn floating-call"
-           title="Call KGV"
-           aria-label="Call KGV">
-            <i class="fa-solid fa-phone"></i>
+        <a
+            href="tel:+919522222079"
+            class="floating-btn floating-call"
+            title="Call KGV: +91 95222 22079"
+            aria-label="Call KGV on +91 95222 22079"
+        >
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
         </a>
 
     </div>
 
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script
+        src="{{ url_for('static', filename='js/main.js') }}"
+    ></script>
+
 </body>
 </html>
